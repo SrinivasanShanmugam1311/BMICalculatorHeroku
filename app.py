@@ -12,7 +12,7 @@ def bmi_category(bmi):
     if bmi < 40: return "Obese Class II"
     return "Obese Class III"
 
-@app.route("/bmi", methods=["GET","POST"])
+@app.route("/", methods=["GET","POST"])
 def index():
     result = None
     if request.method == "POST":
